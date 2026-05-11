@@ -279,8 +279,8 @@ Please reference the relevant phase from the roadmap in your PR description.
 ↥ [Back to top](#table-of-contents)
 
 This project is maintained by:
-- Tanmay Jaiswal
-- Sujal Som
+- [Tanmay Jaiswal](https://github.com/TanmayJaiswal-IITBH)
+- [Sujal Som](https://github.com/sujalsom22)
 
 ---
 
