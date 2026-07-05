@@ -4,7 +4,10 @@ from chromadb.config import Settings
 client = chromadb.PersistentClient(path="./data/chroma")
 
 
-collection = client.get_or_create_collection(name="github_issues")
+collection = client.get_or_create_collection(
+    name="github_issues",
+    metadata={"hnsw:space": "cosine"}
+)
 
 
 def add_issue(issue_id, text, vector, metadata):

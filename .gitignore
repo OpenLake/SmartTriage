@@ -8,8 +8,7 @@ venv/
 
 # Chroma database
 data/issues.json
-data/chroma/chroma.sqlite3
-data/chroma/defcbcc9-4578-4553-b3f4-648cbe1c763b
+data/chroma/
 
 # IDE
 .vscode/

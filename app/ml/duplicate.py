@@ -11,7 +11,7 @@ def detect_duplicate(issue_text):
     result = search_similar_issue(embedding)
 
 
-    if not result["distances"][0]:
+    if not result["distances"] or not result["distances"][0]:
         return None
 
     distance = result["distances"][0][0]

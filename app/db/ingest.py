@@ -10,7 +10,7 @@ def main():
     github = GitHubClient()
     issues = github.fetch_issues(SOURCE_REPO)
     
-    uncleaned_issues = []
+    raw_issues = []
 
     for issue in issues:
         cleaned = clean_issue(issue)
@@ -23,7 +23,7 @@ def main():
                 "url": cleaned["url"]
             }
         )
-        uncleaned_issues.append({
+        raw_issues.append({
             "id": issue['id'],
             "title": issue['title'],
             "body": issue['body'],
@@ -34,7 +34,7 @@ def main():
     os.makedirs("data", exist_ok=True)
 
     with open("data/issues.json", "w", encoding="utf-8") as f:
-        json.dump(uncleaned_issues, f, indent=4, ensure_ascii=False)
+        json.dump(raw_issues, f, indent=4, ensure_ascii=False)
     print(f"Stored {len(issues)} issues")
 
 

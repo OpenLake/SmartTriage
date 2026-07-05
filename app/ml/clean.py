@@ -1,6 +1,12 @@
 from app.ml.embedder import Embedder
 
-embedder = Embedder()
+_embedder = None
+
+def get_embedder():
+    global _embedder
+    if _embedder is None:
+        _embedder = Embedder()
+    return _embedder
 
 def clean_issue(issue):
     text = ""
@@ -11,12 +17,12 @@ def clean_issue(issue):
     if issue["body"]:
         text += "\n" + issue["body"]
 
-    vector = embedder.generate_embedding(text)
+    embedding = get_embedder().generate_embedding(text)
     
     return {
         "id": issue["id"],
         "text": text.strip(),
         "url": issue["url"],
         "state": issue["state"],
-        "vector": vector
+        "embedding": embedding
     }

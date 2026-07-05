@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 # SmartTriage
 
 An intelligent GitHub bot that automates issue triage and PR reviewer assignment using vector similarity search and commit history analysis for OpenLake repositories.
@@ -20,7 +17,7 @@ An intelligent GitHub bot that automates issue triage and PR reviewer assignment
 - [Quick Start Guide](#quick-start-guide)
 - [Environment Variables Example](#environment-variables-example)
 - [Basic API Overview](#basic-api-overview)
-- [Common Issues & Troubleshooting](#common-issues--troubleshooting)
+- [Common Issues &amp; Troubleshooting](#common-issues--troubleshooting)
 - [Contact](#contact)
 
 ---
@@ -235,10 +232,10 @@ Refer to `.env.example` for all required variables.
 
 ↥ [Back to top](#table-of-contents)
 
-| Endpoint | Method | Description |
-|---|---|---|
-| `/webhook` | POST | Receives GitHub webhook events (issue opened, PR opened) |
-| `/health` | GET | Health check for the running server |
+| Endpoint     | Method | Description                                              |
+| ------------ | ------ | -------------------------------------------------------- |
+| `/webhook` | POST   | Receives GitHub webhook events (issue opened, PR opened) |
+| `/health`  | GET    | Health check for the running server                      |
 
 Refer to `app/api/webhooks.py` for the full webhook routing logic.
 
@@ -261,4 +258,11 @@ Refer to `app/api/webhooks.py` for the full webhook routing logic.
 ↥ [Back to top](#table-of-contents)
 
 If you have any questions or feedback, feel free to reach out to the maintainers or open an issue in the repository.
+
 >>>>>>> c703023b2e677d75aef064a1828fc5d857b18b68
+>>>>>>>
+>>>>>>
+>>>>>
+>>>>
+>>>
+>>

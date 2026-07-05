@@ -37,6 +37,6 @@ class GitHubClient:
         return issues
     
     def comment_issue(self, issue_number, comment):
-        self.repo = self.get_repo(TARGET_REPO)
-        issue = self.repo.get_issue(number=issue_number)
+        repo = self.get_repo(TARGET_REPO)
+        issue = repo.get_issue(number=issue_number)
         issue.create_comment(comment)
