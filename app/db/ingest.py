@@ -17,7 +17,7 @@ def main():
         add_issue(
             cleaned["id"],
             cleaned["text"],
-            cleaned["vector"],
+            cleaned["embedding"],
             {
                 "state": cleaned["state"],
                 "url": cleaned["url"]

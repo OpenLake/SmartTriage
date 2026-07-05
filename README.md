@@ -259,10 +259,3 @@ Refer to `app/api/webhooks.py` for the full webhook routing logic.
 
 If you have any questions or feedback, feel free to reach out to the maintainers or open an issue in the repository.
 
->>>>>>> c703023b2e677d75aef064a1828fc5d857b18b68
->>>>>>>
->>>>>>
->>>>>
->>>>
->>>
->>
